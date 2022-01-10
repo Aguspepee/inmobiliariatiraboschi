@@ -1,1 +1,6 @@
-<p>productos works!</p>
+<div *ngFor="let producto of productos">
+<h1>{{producto.name}}</h1>
+<h2>{{producto.price | currency}}</h2>
+<p>{{producto.detail}}</p>
+<button routerLink="/detail/{{producto.id}}">Ver detalle</button>
+</div>
